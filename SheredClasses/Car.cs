@@ -6,23 +6,18 @@ namespace SheredClasses
 {
   public  class Car
     {
-           public string Model { get; set; }
-           public int Speed { get; set; }
-           public string Driver { get; set; }
+        public string Model { get; set; }
+        public int Speed { get; set; }
+        public string Driver { get; set; }
 
 
-        public Car(string aModel,int aSpeed, string aDriver)
+        static public int CalculateSpeed(Driver driver,int speed)
         {
-            Model = aModel;
-            Speed = aSpeed;
-            Driver = aDriver;
-        }
 
-        public int CalculateSpeed(int skill, int speed)
-        {
-            int result = skill * speed;
+            int result = driver.Skill * speed;
             return result;
         }
 
     }
+
 }

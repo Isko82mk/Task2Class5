@@ -11,13 +11,31 @@ namespace SheredClasses
         public string Driver { get; set; }
 
 
-        static public int CalculateSpeed(Driver driver,int speed)
-        {
 
-            int result = driver.Skill * speed;
-            return result;
+        public Car(string aModel, int aSpeed, string aDriver)
+        {
+            Model = aModel;
+            Speed = aSpeed;
+            Driver = aDriver;
         }
 
+        public Car()
+        {
+        }
+
+        public int CarSpeed(Driver driver, Car car)
+        {
+           int sum= driver.Skill * car.Speed;
+           return sum;
+        }
+
+        public void RaceCars(Car car1, Car car2) {
+
+            if (car1.CarSpeed() > car2.CarSpeed())
+            {
+
+            }
+        }
     }
 
 }

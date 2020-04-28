@@ -8,5 +8,17 @@ namespace SheredClasses
     {
       public string Name { get; set; }
         public int Skill { get; set; }
+
+
+        public Driver(string aName, int aSkill)
+        {
+            Name = aName;
+            Skill = aSkill;
+        }
+
+
     }
+
+    
+
 }

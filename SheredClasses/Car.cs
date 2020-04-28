@@ -31,10 +31,7 @@ namespace SheredClasses
 
         public void RaceCars(Car car1, Car car2) {
 
-            if (car1.CarSpeed() > car2.CarSpeed())
-            {
-
-            }
+            
         }
     }
 
